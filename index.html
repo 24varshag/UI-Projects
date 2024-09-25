@@ -13,6 +13,7 @@
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#bookjournal">BookJournal</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -23,11 +24,71 @@
             <p>Welcome to my portfolio! I am Varsha, a computer science student with a focus on frontend and full-stack development, as well as user interface design.</p>
         </section>
         <section id="projects">
-            <h2>Projects<span>CS 6067 - USER INTERFACE I</span> </h2>
+            <h2>Projects <span>CS 6067 - USER INTERFACE I</span></h2>
             <ul>
                 <li>Project 1: Description</li>
                 <li>Project 2: Description</li>
                 <!-- Adding more projects here -->
+            </ul>
+        </section>
+        <section id="bookjournal">
+            <h2>BookJournal</h2>
+            <h3>Design Process</h3>
+            <h4>Interviews</h4>
+            <p>To understand user needs, I interviewed three people about if and how they track their reading and what features they would find helpful.</p>
+            <h5>Questions Asked:</h5>
+            <ul>
+                <li>Do you track the books you read? If so, how?</li>
+                <li>What would you like to improve about how you track your reading?</li>
+                <li>Do you set reading goals for yourself? How do you track them?</li>
+                <li>Would you like a visual representation of your reading goals?</li>
+                <li>Do you journal your thoughts while reading? If so, how?</li>
+                <li>How do you categorize your books? Would categories like "Reading," "Completed," "To Be Read," and "Did Not Finish" be useful?</li>
+                <li>Would you like to rate your books after finishing them?</li>
+                <li>Any frustrations with current book-tracking apps?</li>
+            </ul>
+            <h5>Feedback:</h5>
+            <p>The majority used a combination of apps like Libby and Google Docs or no app at all. People wanted different types of goals they could track. Visual tracking and gamified goals were of interest. Common categories like "Reading" and "Completed" were all that the people required, but they mentioned they wouldn't mind more options. Some preferred journaling after reading a book, while others liked the idea of journaling after each chapter. Although some wanted a numerical rating system, most were comfortable with a 5-star rating scale as it is generic and widely used. Overall they just wanted everything to be streamlined into one space.</p>
+            
+            <h4>Interface Design</h4>
+            <h5>Features and Controls</h5>
+            <ul>
+                <li>Journaling: Users can write journal entries linked to specific books, with the ability to add multiple entries for each book.</li>
+                <li>Book Categorization: Users can add books and sort them into categories like "Reading," "Finished," "Dropped," and "To Be Read."</li>
+                <li>Goal Setting: Users can set goals for reading based on the number of books they read or the amount of time spent reading, with a progress bar to showcase the goal’s progress.</li>
+                <li>Rating System: Books can be rated after completion, using a 5-star rating system.</li>
+                <li>Editing: Users can edit the categories of each book, and can edit each journal entry along with their goal.</li>
+            </ul>
+
+            <h5>Implementation Details</h5>
+            <h6>Libraries and Tools Used</h6>
+            <p>I didn't use anything extra other than the default Svelte application, HTML, CSS, and JavaScript.</p>
+            <h6>Code Structure</h6>
+            <p>Main Component: App.svelte is the main component that holds my book library. I pass props from App.svelte to multiple components, each handling different sections of the application. There are 7 other components apart from App: Navbar, Features, Content, Library, Rating, Books, Bookshelf.</p>
+            <p>The App component uses Navbar, Features, and Content. The Content component uses Library, Ratings, and Books. The Library component calls the Bookshelf.</p>
+            <p>Books Structure: Each book is an object in an array with properties like name, bookCategory, rating, timeSpent, chaptersRead, and journalEntries. JournalEntries is an array holding individual entries, each with properties like name, date, startChapter, endChapter, timeSpentReading, and textEntry.</p>
+            <h6>Component Responsibilities:</h6>
+            <ul>
+                <li>The Features component handles creating and displaying the goals.</li>
+                <li>The Content component manages the journaling feature where the user is prompted to enter their name and date, then select a book they want to add the journal entry to, the start chapter, the end chapter, and finally the time spent reading those chapters.</li>
+                <li>The Library component handles adding new books and displays the bookshelf from the Bookshelf component.</li>
+                <li>The Ratings component manages rating a selected book and updates the category status of that selected book.</li>
+                <li>The Books component displays all books and their associated journal entries within their respective categories.</li>
+            </ul>
+
+            <h4>Future Work</h4>
+            <h5>Planned Features & Uncompleted Work</h5>
+            <ul>
+                <li>Styling: Some buttons throughout the application still need to be styled.</li>
+                <li>Library and Journal Entries: I wasn't fully able to style how books and journal entries are displayed in the library.</li>
+                <li>Navigation: Initially, there were two buttons on the navbar that opened new pages for journal entries and the library. However, to meet the deadline, I moved this content to the bottom of the main page.</li>
+                <li>Animations: I planned to add more animations, particularly one showing a book being added when a new book is added, but I wasn’t able to implement it yet.</li>
+                <li>Sizing: This application works best on any screen size 1440px or above. I wasn’t able to add web responsiveness just yet.</li>
+            </ul>
+            <h5>Future Plans:</h5>
+            <ul>
+                <li>Integrate user authentication to enable long-term data storage and allow users to maintain personal libraries.</li>
+                <li>Improve design and layout, focusing on making the application more mobile-friendly.</li>
             </ul>
         </section>
         <section id="contact">
