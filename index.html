@@ -59,13 +59,13 @@
             </ul>
 
             <h5>Implementation Details</h5>
-            <h6>Libraries and Tools Used</h6>
+            <h5>Libraries and Tools Used</h5>
             <p>I didn't use anything extra other than the default Svelte application, HTML, CSS, and JavaScript.</p>
-            <h6>Code Structure</h6>
+            <h5>Code Structure</h5>
             <p>Main Component: App.svelte is the main component that holds my book library. I pass props from App.svelte to multiple components, each handling different sections of the application. There are 7 other components apart from App: Navbar, Features, Content, Library, Rating, Books, Bookshelf.</p>
             <p>The App component uses Navbar, Features, and Content. The Content component uses Library, Ratings, and Books. The Library component calls the Bookshelf.</p>
             <p>Books Structure: Each book is an object in an array with properties like name, bookCategory, rating, timeSpent, chaptersRead, and journalEntries. JournalEntries is an array holding individual entries, each with properties like name, date, startChapter, endChapter, timeSpentReading, and textEntry.</p>
-            <h6>Component Responsibilities:</h6>
+            <h5>Component Responsibilities:</h5>
             <ul>
                 <li>The Features component handles creating and displaying the goals.</li>
                 <li>The Content component manages the journaling feature where the user is prompted to enter their name and date, then select a book they want to add the journal entry to, the start chapter, the end chapter, and finally the time spent reading those chapters.</li>
