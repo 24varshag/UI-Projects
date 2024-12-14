@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Varsha's Portfolio</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="my-react-app/src/App.css" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Varsha's Portfolio</title>
   </head>
   <body>
     <header>
@@ -21,104 +41,21 @@
     </header>
 
     <main>
-      <section id="about"></section>
-      <section id="projects">
-        <h2 style="text-align: center">
-          Projects <span>CS 6067 - USER INTERFACE I</span>
-        </h2>
+      <div>Project 1</div>
+      <div>Project 2</div>
 
-        <h2>Project 4: UI for Good</h2>
-        <ul></ul>
-          <li>
-            <a
-              href="https://charityclarity.netlify.app/"
-              target="_blank"
-              >Click here to see Project Four!
-            </a>
-          </li>
-          <li>
-            <a href="https://youtu.be/d-SKelH_rPk" target="_blank"
-              >Here is a demo</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://github.com/24varshag/BookJournal"
-              target="_blank"
-              >Click here to see my github!
-            </a>
-          </li>
-        </ul>
+      <section id="about">
+        <h2>About Me</h2>
         <p>
-          For this project, I wanted to create an interactive activity or game
-          to raise awareness for a meaningful cause. Since eyesight is
-          incredibly important and not everyone is fortunate enough to maintain
-          it, I decided to focus on researching the issue rather than conducting
-          user interviews. In the process, I came across glaucoma charities and
-          chose to work on something that could support their efforts.
+          Welcome to my portfolio! I am Varsha, a computer science student with
+          a focus on frontend and full-stack development, as well as user
+          interface design.
         </p>
-        <h4>Research</h4>
-        <p>Through my research, I discovered that glaucoma is an eye condition that affects people in different ways. It typically begins by gradually narrowing vision from the outer edges, slowly closing in on the periphery, and eventually impairing central vision. In extreme cases, a person with glaucoma may only be able to see through a small opening. I wanted to replicate this experience by attempting to locate something with such limited vision.
-        </p>
-        <h4>Design Process</h4>
-
-        <img src="/public/p41.png" class="images" />
-        <img src="/public/p42.png" class="images" />
-        <img src="/public/p43.png" class="images" />
-
-        <h4>Interface Design</h4>
-
-        <p>
-          This page is all about raising awareness for glaucoma, a sneaky eye
-          condition you might not even know about!
-        </p>
-        <p>Here's how to play:</p>
-        <p>
-          1. Find the Teddy: Scroll through the page and try to find the hidden
-          teddy bear. It's trickier than it looks!
-        </p>
-        <p>
-          2. Learn About Glaucoma: Once you find the teddy, you'll unlock
-          important information about glaucoma.
-        </p>
-        <p>
-          3. Support the Cause: We'll also show you how to support organizations
-          that are fighting glaucoma.
-        </p>
-
-        <h4>Libraries & Tools used</h4>
-        <p>
-          I used SweetAlerts2 Api for alerts in this application. I didn't use
-          anything other than that and the default Svelte application, HTML,
-          CSS, and JavaScript.
-        </p>
-        <h4>Future Work</h4>
-        <p>
-          I plan to make the game a little but more intricate and fun to play.
-        </p>
-        <p>
-          I also did not get a change to make the donation page a little more
-          interactive rather than just being a page full of information.
-        </p>
-        <p>
-          And finally I would love to connect the page to a legit donation
-          portal where people can use this website to start making offical
-          donations.
-        </p>
-        <h4>Screenshots!</h4>
-        <img src="/public/p44.png" class="images" />
-        <img src="/public/p45.png" class="images" />
-        <img src="/public/p46.png" class="images" />
-        <img src="/public/p47.png" class="images" />
-        <img src="/public/p48.png" class="images" />
-        <img src="/public/p49.png" class="images" />
-
-
-        
       </section>
-      <section id="bookjournal">
-        <h2>Project 1: BookJournal</h2>
+      <section id="projects">
+        <h2>Projects <span>CS 6067 - USER INTERFACE I</span></h2>
         <ul>
+          <li>Project 1: BookJournal</li>
           <li>
             <a
               href="https://66f36ea892d451941f52d87a--dainty-truffle-4f28d1.netlify.app/"
@@ -131,16 +68,12 @@
               >Here is a demo</a
             >
           </li>
-          <li>
-            <a
-              href="https://github.com/24varshag/Charity-Clarity"
-              target="_blank"
-              >Click here to see my github!
-            </a>
-          </li>
         </ul>
-        <h4>Design Process</h4>
-        <h5>Interviews</h5>
+      </section>
+      <section id="bookjournal">
+        <h2>BookJournal</h2>
+        <h3>Design Process</h3>
+        <h4>Interviews</h4>
         <p>
           To understand user needs, I interviewed three people about if and how
           they track their reading and what features they would find helpful.
@@ -201,14 +134,7 @@
           </li>
         </ul>
 
-        <h5>Sketches</h5>
-        <img src="/public/p11.png" class="images" />
-        <img src="/public/p12.png" class="images" />
-        <img src="/public/p13.png" class="images" />
-        <img src="/public/p14.png" class="images" />
-
-
-        <h4>Implementation Details</h4>
+        <h5>Implementation Details</h5>
         <h5>Libraries and Tools Used</h5>
         <p>
           I didn't use anything extra other than the default Svelte application,
@@ -298,13 +224,6 @@
           </li>
         </ul>
         <h5>Screenshots:</h5>
-        <img src="/public/p15.png" class="images" />
-        <img src="/public/p16.png" class="images" />
-        <img src="/public/p19.png" class="images" />
-        <img src="/public/p110.png" class="images" />
-        <img src="/public/p111.png" class="images" />
-        <img src="/public/p112.png" class="images" />
-
         <ul>
           <li>
             <a
